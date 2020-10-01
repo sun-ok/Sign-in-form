@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entering form</title>
+    <link rel="stylesheet" href="entering form.css">
+</head>
+
+<body>
+    <form id="form" action="https://google.com/search">
+        <label for="emailTextField">Email</label>
+        <input type="email" id="emailTextField" name="emailTextField" class="textField">
+        <label for="emailTextField" class="incorrectInputLabel display-none" id="incorrectEmailWarning">Not an email address</label>
+
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="passwordTextField" class="textField">
+        <label for="password" class="incorrectInputLabel display-none" id="incorrectPasswordWarning">8 characters,1 number, 1 uppercase</label>
+
+
+        <label for="confirm_password">Confirm password</label>
+        <input type="password" id="confirm_password" name="confirmTextField" class="textField">
+        <label for="confirmTextField" class="incorrectInputLabel display-none" id="confirmWarning">Passwords don`t match</label>
+
+
+        <input type="button" value="SUBMIT" class="button" id="button">
+    </form>
+    <script src="entering form.js"></script>
+</body>
+
+</html>

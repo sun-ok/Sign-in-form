@@ -1,0 +1,60 @@
+body,
+html {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #007bff;
+}
+
+form {
+    margin: auto;
+    padding: 10%;
+    display: grid;
+    background-color: white;
+    opacity: 0.8;
+    border-radius: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5s, 1fr);
+    row-gap: 10px;
+    justify-items: start;
+    align-items: center;
+}
+
+.button {
+    grid-column: 1/ span 2;
+    grid-row: 10;
+    justify-self: center;
+    background-color: #007bff;
+    color: black;
+    border: 0;
+    border-radius: .25rem;
+    font-size: 1.2rem;
+    padding: 0.35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: "Segoe UI Symbol";
+}
+
+.incorrectInputLabel {
+    grid-column: 2;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.display-none {
+    display: none;
+}
+
+textarea:focus,
+input:focus {
+    outline: none;
+}
+
+.textField {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+}
